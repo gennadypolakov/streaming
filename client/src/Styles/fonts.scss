@@ -1,0 +1,27 @@
+$font-size--small:  14px;
+$font-size--medium: 15px;
+$font-size--big:    20px;
+
+$font-weight--light:  300;
+$font-weight--medium: 400;
+$font-weight--bold:   700;
+
+@mixin create_font($color, $size, $wight) {
+  text-decoration: none;
+  color: $color;
+  font-size: $size;
+  font-weight: $wight;
+}
+
+.stvi-font--small {
+	@include create_font($main--light-x1, $font-size--small, $font-weight--light);
+	line-height: 1;
+}
+
+.stvi-font--medium {
+	@include create_font($main--dark-x1, $font-size--medium, $font-weight--medium);
+}
+
+.stvi-font--big {
+	@include create_font($main--dark-x1, $font-size--big, $font-weight--bold);
+}

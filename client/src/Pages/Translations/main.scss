@@ -1,0 +1,242 @@
+@import '../../App.scss';
+.translations{
+	background-color: $main--light-x3;
+}
+#translations > .Panel__in{
+	background-color: $main--light-x3;
+}
+.translation__item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        padding: 0;
+    }
+  & > span{
+    color: #909499;
+  }
+}
+.trnslatSet-title{
+  display: block;
+  color: #909499;
+  padding: 0px 12px 16px;
+}
+
+#channel-settings .Panel__in{
+	background-color: $main--light-x3;
+}
+.rtmp-wrapper{
+  position: relative;
+  //height: 184px;
+  transition: all 0.3s;
+  .rtmp-wrapper__title{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &.collapsed{
+    height: 20px;
+    .rtmp-wrapper__title{
+      display: flex;
+      font-size: 13px;
+      line-height: 22px;
+      font-weight: 600;
+      padding-left: 10px;
+      text-transform: uppercase;
+      color: #909499;
+    }
+  }
+  &.collapsed:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+}
+
+.channels {
+
+  .Header__content {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    & > *:not(.Select):not(.Button) {
+      margin-right: 20px;
+    }
+
+    .Select__container{
+      width: 200px;
+      .Select__title {
+        font-size: 13px;
+      }
+    }
+
+    @media only screen and (max-width: 520px) {
+      flex-flow: column nowrap;
+      align-items: flex-start;
+
+      & > *:not(.Select):not(.Button) {
+        margin-bottom: 20px;
+      }
+
+      .Select__container{
+        width: 100%;
+        .Select__title {
+          font-size: 13px;
+        }
+      }
+    }
+
+  }
+
+}
+
+.input-copy {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    div{
+    	padding: 0;
+    }
+    &__title{
+    	display: flex;
+    	flex-flow: row nowrap;
+    	align-items: center;
+    	margin-bottom: 10px;
+    	font-size: $font-size--medium;
+    	color: $main--dark-x1;
+    	opacity: .7;
+    	span{
+    		margin-right: 10px;
+    	}
+    }
+    &__data{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-end;
+    }
+    .input-copy__icon{
+    	padding-bottom: 10px;
+    }
+    .get-new-key__button{
+		border: 1px solid $main--light-x2;
+		color: $main--dark-x1;
+    }
+
+    .FormLayout__container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+
+        .FormLayout__row:nth-child(1){
+            flex: 1 0 auto;
+        }
+        .FormLayout__row:nth-child(2){
+            flex: 0 0 auto;
+        }
+
+        .Icon--copy_24 {
+            color: $gray;
+            width: 40px !important;
+            cursor: pointer;
+            &:hover {
+                color: $main;
+            }
+
+            svg {
+                margin: auto;
+            }
+        }
+    }
+
+    .Input {
+        flex: 1 0 auto;
+    }
+
+    .Icon--copy_24 {
+        color: $gray;
+        width: 40px !important;
+        cursor: pointer;
+        &:hover {
+            color: $main;
+        }
+
+        svg {
+            margin: auto;
+        }
+    }
+}
+.title-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+span.status {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  z-index: 1000;
+  &.live {
+    background-color: $green;
+    animation: live 1.4s infinite;
+  }
+  &.offline {
+    background-color: $red;
+  }
+}
+
+@keyframes live {
+  to {
+    background-color: #008000;
+  }
+}
+.add-channel__button{
+  border: 1px dashed $gray;
+  width: 44px;
+  height: 44px;
+}
+.select-channel__wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  .Button{
+    align-self: flex-end;
+    margin-left: 15px;
+  }
+}
+.channels .Header__content{
+  width: 100%;
+}
+.shared-time-title{
+	display: block;
+	margin: 5px 5px 20px;
+}
+.shared-time{
+	margin: 10px 0px;
+	span{
+		font-size: 14px;
+		padding: 5px 10px;
+		background-color: $main--light-x3;
+		border: 1px solid $main--light-x2;
+		border-radius: 3px;
+	}
+}
+
+.preview-image img {
+  height: 40px;
+  margin: 8px 12px 2px 0;
+  border-radius: 3px;
+}

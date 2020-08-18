@@ -1,0 +1,162 @@
+.market .FormLayoutGroup .Input {
+    width: 50% !important;
+    display: inline-block !important;
+    /* margin-left: 20px !important;
+    margin-right: 15px !important; */
+}
+
+.market .FormLayoutGroup {
+    display: flex !important;
+}
+
+.market .FormLayout__row {
+    padding-bottom: 0px !important;
+}
+
+/* .market .FormLayout__field .Input {
+    display: inline-block;
+} */
+
+.market .data,
+.market .time {
+    margin: auto;
+}
+
+/* .market .search {
+    margin-left: 20px !important;
+    margin-right: 15px !important;
+}
+
+*/
+
+/* .market .FormLayout__container {
+    margin-left: 20px !important;
+    margin-right: 15px !important;
+}
+
+*/
+
+.market .Cell__before-in {
+    margin: auto;
+    color: black;
+}
+
+.market .Cell__main {
+    margin: auto;
+}
+
+.market .Cell__before {
+    padding-right: 10px;
+    color: black;
+}
+
+.market .Cell__children {
+    color: rgb(0, 0, 0) !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    letter-spacing: 0px !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    vertical-align: middle !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0px !important;
+    min-width: 1px !important;
+    min-height: 1px !important;
+    white-space: nowrap !important;
+    display: table-cell !important;
+}
+
+.market .Cell__aside {
+    color: rgb(0, 0, 0) !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    letter-spacing: 0px !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    vertical-align: middle !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0px !important;
+    min-width: 1px !important;
+    min-height: 1px !important;
+    white-space: nowrap !important;
+    display: table-cell !important;
+}
+
+.market .Cell {
+    /* border: solid 1px #858585; */
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.market .Cell.channel {
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0px 0px 2px 0px rgba(133, 133, 133, 1);
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* .market .Div {
+    margin-bottom: 40px;
+}
+
+*/
+
+.market .List {
+    /* border: solid 1px #858585; */
+    border: none;
+    margin-left: 12px;
+    margin-right: 12px;
+    box-shadow: 0px 0px 2px 0px rgba(133, 133, 133, 1);
+    padding: 10px 0;
+}
+
+.market .List button {
+    width: -webkit-fill-available;
+    margin: 10px;
+}
+
+.market .select-translation .Cell {
+    /* border: 0; */
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: solid 1px #dcdcdc;
+}
+
+.market h4 {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    min-width: 1px;
+    min-height: 1px;
+    white-space: nowrap;
+    /* display: table-cell; */
+}
+
+.market h4.time {
+    text-decoration: underline;
+}
+
+.market label.Select {
+    margin-top: 0px !important;
+}
+
+.market .free-time,
+.market .summ {
+    margin-left: 12px !important;
+}

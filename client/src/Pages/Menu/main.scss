@@ -1,0 +1,16 @@
+#menu {
+    .Cell {
+        margin: 0px;
+        padding: 0px;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 0px;
+        overflow: hidden;
+        &.Tappable--active{
+            border-radius: 0px;
+        }
+    }
+    .Div{
+        padding: 0;
+    }
+}

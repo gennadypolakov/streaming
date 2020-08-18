@@ -1,0 +1,17 @@
+// Colors
+$main: #5181b8;
+$green: #6ab851;
+$red: #eb6363;
+$gray: #99a2ad;
+$main--light-x05: lighten($main,15%);
+$main--light-x1: lighten($main,20%);
+$main--light-x2: lighten($main,35%);
+$main--light-x3: lighten($main,45%);
+$main--light-x4: lighten($main,47%);
+$main--dark-x1: darken($main,18%);
+
+//Gradient
+$gradient-main: linear-gradient(90deg, $main--light-x05, $main);
+
+//Shadow
+$shadow-bottom-gray: 0px 2px 15px 0px #e8e8e8;

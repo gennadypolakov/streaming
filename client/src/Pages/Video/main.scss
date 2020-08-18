@@ -1,0 +1,135 @@
+/*.video .Button {
+    border-radius: 0 !important;
+}*/
+
+.video .Icon {
+    display: inline-block;
+}
+
+.video .Group__content .Div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.video .album {
+    width: 200px;
+    /*border: 1px gray solid;*/
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(133, 133, 133, 1);
+    cursor: pointer;
+}
+
+.video .album .preview {
+    position: relative;
+}
+
+.video .album .preview img {
+    width: 100%;
+}
+
+.video .album .preview .Checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background: #fff;*/
+    max-width: 52px;
+    max-height: 52px;
+    padding: 9px
+}
+
+.video .album .preview .Checkbox__icon {
+    margin: auto;
+}
+
+.video .album .preview .quantity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    padding: 8px;
+}
+
+.video .album .album_name {
+    padding: 8px;
+}
+
+.video .video-item {
+    width: 200px;
+    /*border: 1px gray solid;*/
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(133, 133, 133, 1);
+}
+
+.video .video-item .preview {
+    position: relative;
+}
+
+.video .video-item .preview img {
+    width: 100%;
+}
+
+.video .video-item .preview .Checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background: #fff;*/
+    max-width: 52px;
+    max-height: 52px;
+    padding: 9px
+}
+
+.video .video-item .preview .Checkbox__icon {
+    margin: auto;
+}
+
+.video .video-item .video_name {
+    padding: 8px;
+}
+
+.video .fixedfooter {
+    background: #fff;
+    border-top: 1px solid #D6D6D6;
+}
+
+.broadcast-time,
+.broadcast-date {
+    display: flex;
+    padding: 12px;
+}
+
+.broadcast-time>div,
+.broadcast-date>div {
+    margin-right: 20px;
+}
+
+.broadcast-time>div:last-child,
+.broadcast-date>div:last-child {
+    margin-right: 0;
+}
+
+.broadcast-time input {
+    width: 45px;
+}
+
+.broadcast-date input {
+    width: 85px;
+}
+
+.date-time {
+    display: flex;
+    padding: 12px;
+}
+
+.date-time>div {
+    margin-right: 20px;
+}
+
+.date-time>div:last-child {
+    margin-right: 0;
+}
+
+.date-time input {
+    width: 130px;
+}

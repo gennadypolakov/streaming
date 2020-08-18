@@ -1,0 +1,13 @@
+/.idea
+.svn
+.git
+.bash_history
+composer.phar
+/.idea
+/logs
+/vendor
+/vendor_bckp
+/node_modules
+/public/adminer.php
+.bash_history
+*.mp4

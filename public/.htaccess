@@ -1,0 +1,29 @@
+AddDefaultCharset UTF-8
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/lg/
+RewriteRule ^([^\.]+)$ index.php?urls=$1 [QSA]
+# RewriteRule ^(.+)$ index.php?urls=$1 [QSA]
+
+<FilesMatch "\.(log)$">
+	Order deny,allow
+	deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+	RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+</IfModule>
+
+RewriteRule \.svn/ - [F]
+RewriteRule \.git/ - [F]
+RewriteRule \.idea/ - [F]
+
+Options All -Indexes

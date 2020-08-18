@@ -1,0 +1,2 @@
+
+"{\n \"error\": {\n  \"errors\": [\n   {\n    \"domain\": \"youtube.liveBroadcast\",\n    \"reason\": \"titleRequired\",\n    \"message\": \"Title is required\",\n    \"extendedHelp\": \"https:\/\/developers.google.com\/youtube\/v3\/live\/docs\/liveBroadcasts\/insert#request_body\"\n   }\n  ],\n  \"code\": 400,\n  \"message\": \"Title is required\"\n }\n}\n"

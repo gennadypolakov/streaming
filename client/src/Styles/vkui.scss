@@ -1,0 +1,124 @@
+.Group{
+    box-shadow: none;
+    margin: 0;
+    &:before, &:after{
+        display: none;
+    }
+}
+.Group_content{
+    box-shadow: none;
+}
+.List {
+    background-color: transparent;
+    z-index: 1;
+}
+.Panel{
+    &:after{
+        background-color: $main--light-x3;
+    }
+}
+.Tabbar{
+    box-shadow: 0 0 25px -10px $gray;
+}
+
+.Cell {
+    margin: 10px;
+    padding: 0px;
+    background-color: #fff;
+    box-shadow: $shadow-bottom-gray;
+    border-radius: 20px;
+    overflow: visible;
+    &.Tappable--active{
+        border-radius: 20px;
+    }
+    &.options{
+        margin-top: -20px;
+        z-index: 0;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
+
+.Cell__in{
+    overflow: visible;
+}
+
+.Cell .Cell__main {
+    padding-right: 0;
+}
+.Checkbox{
+    .Checkbox__content{
+        font-size: inherit;
+    }
+}
+
+.vk_auth {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    z-index: 1000;
+}
+
+.PanelHeader__container,
+.HorizontalScroll__in,
+.Group,
+.fixedfooter .container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Tappable,
+.Link {
+    cursor: pointer;
+}
+
+.FormLayout {
+    width: 100%;
+}
+
+.Div.user .Cell {
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+
+.Div.user .Cell__in {
+    padding: unset;
+}
+
+.Div.user .Cell__before {
+    padding-left: unset;
+    padding-right: unset;
+    margin-right: unset;
+}
+
+.Div.user .Cell__main {
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.Div.user .Cell__main {
+    flex-grow: unset;
+    margin: inherit;
+}
+
+.Div.user .Cell__main .Cell__children {
+    font-size: 16px !important;
+    font-weight: normal;
+}
+
+.FormLayout.popup {
+    max-width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+#header-bg-services .PanelHeader-bg{
+    box-shadow: $shadow-bottom-gray;
+    z-index: 1;
+}
+.Avatar{
+    .Avatar__img{
+        background: transparent;
+    }
+}

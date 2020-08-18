@@ -1,0 +1,280 @@
+@import '../../App.scss';
+
+.balance {
+    background-color: $main--light-x3;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: -webkit-fill-available;
+    .balace_title {
+        display: flex;
+        align-items: center;
+        padding: 10px 5px;
+    }
+
+    .balace_group {
+        background-color: transparent;
+        box-shadow: none;
+
+        .Cell__before {
+            display: none;
+        }
+    }
+
+    .List {
+        background-color: transparent;
+    }
+
+    .Cell {
+        margin-bottom: 12px;
+        padding: 10px 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 15px 0 #e8e8e8;
+        border-radius: 20px;
+    }
+    .Cell__in{
+        padding: 0 10px;
+    }
+
+    .Div{
+        padding: 5px 0;
+    }
+
+    .Cell__main {
+        padding: 0;
+    }
+
+    .balace_wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &>div {
+            display: flex;
+            flex-grow: 1;
+            padding: 5px 0;
+        }
+
+        &__count {
+            flex-grow: 0 !important;
+        }
+
+        .balace_count {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            line-height: 30px;
+            color: $main--light-x2;
+            box-sizing: border-box;
+            border-radius: 25px;
+            background-color: $main--light-x3;
+            justify-content: space-between;
+
+            &__add {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 50%;
+                color: #fff;
+                background-color: $main;
+                cursor: pointer;
+                background-image: $gradient-main;
+            }
+
+            &__num {
+                display: flex;
+                align-items: center;
+                color: $main--dark-x1;
+                border-radius: 50%;
+                padding: 0 15px 0 25px;
+                flex-grow: 1;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .plan_wrapper {
+        &__title {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+            .balance_data {
+                padding: 10px 20px;
+                border: 5px solid #f4f7fb;
+                border-radius: 20px;
+
+                .name {
+                    color: red;
+                    color: $main--dark-x1;
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    white-space: nowrap;
+                    display: contents;
+                }
+
+                .date {
+                    color: $main--dark-x1;
+                    text-align: center;
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 12px;
+                    font-weight: 400;
+                    min-width: 1px;
+                    min-height: 1px;
+                    white-space: nowrap;
+                    letter-spacing: -0.3px;
+                }
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @media (min-width: 500px) {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .slider-thumb {
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        background: #fff;
+        background: var(--white);
+        box-shadow: 0 2px 7px rgba(0, 0, 0, .35), 0 1px 1px rgba(0, 0, 0, .15);
+    }
+
+    .slider-track {
+        height: 4px;
+        background: #528bcc;
+        background: var(--accent);
+    }
+
+    .slider-trackBefore {}
+
+    .slider-trackAfter {}
+
+    .payment-system{
+        padding: 15px 0;
+    }
+    .back-link{
+        padding-left: 20px;
+    }
+    .balance-button{
+        button{
+            padding: 5px 20px;
+            border-radius: 50px;
+            background: $gradient-main;
+        }
+    }
+    .money-count-title{
+        padding: 5px 0 10px;
+    }
+    .balance__amount{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        .Cell{
+            flex-grow: 1;
+        }
+    }
+}
+
+.plan-selector {
+    &__plan {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__title {
+        padding: 25px 0 0;
+    }
+
+    &__accept {
+        width: 100%;
+        display: flex;
+
+        @media (min-width: 400px) {
+            justify-content: flex-end;
+        }
+    }
+
+    .change_traffic {
+        box-shadow: none;
+        padding: 20px 0;
+
+        &__count {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 15px;
+
+            &>.title {
+                padding-right: 20px;
+            }
+
+            & input {
+                max-width: 100px;
+                font-size: 25px;
+                color: $main--dark-x1;
+                text-align: center;
+                border-radius: 50px;
+                background-color: $main--light-x3;
+                opacity: 1;
+
+                &+.Input__border {
+                    display: none;
+                }
+            }
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    .help-text {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        white-space: normal;
+    }
+}
+
+.Cell__children {
+    table{
+        border-collapse: collapse;
+        width: 100%;
+
+        tr{
+            th {
+                border-bottom: 1px solid #dcdcdc;
+                padding: 5px 10px;
+                text-align: left;
+                font-size: 12px;
+            }
+            td {
+                border-bottom: 1px solid #dcdcdc;
+                padding: 5px 10px;
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

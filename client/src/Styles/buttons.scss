@@ -1,0 +1,67 @@
+$border-radius: 50px;
+$btn-margin: 3px!important;
+$outline-width: 2px;
+
+@mixin button-bg($bg, $isoutline) {
+  background: if($isoutline, none, $bg);
+  border: if($isoutline, $outline-width solid $bg, none);
+  &:hover {
+    background:darken($bg,5%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,10%);
+  }
+}
+
+.stvi-btn {
+	color:white;
+	border-radius: $border-radius;
+	margin: $btn-margin;
+	text-decoration:none;
+	@media (min-width: 400px) {
+    	max-width: 150px;
+	}
+}
+
+.stvi-btn-main {
+	@extend .stvi-btn;
+  	@include button-bg($main, false);
+}
+
+.stvi-btn-main-outline {
+	@extend .stvi-btn;
+  	@include button-bg($main, true);
+}
+
+.stvi-btn-main--light-x3 {
+	@extend .stvi-btn;
+	color: $main--dark-x1;
+  	@include button-bg($main--light-x3, false);
+}
+
+.stvi-btn-main--light-x3-outline {
+	@extend .stvi-btn;
+	color: $main--dark-x1;
+  	@include button-bg($main--light-x3, true);
+}
+
+.stvi-btn-success {
+	@extend .stvi-btn;
+  	@include button-bg($green, false);
+}
+
+.stvi-btn-success-outline {
+	@extend .stvi-btn;
+  	@include button-bg($green, true);
+}
+
+.stvi-btn-error{
+	@extend .stvi-btn;
+  	@include button-bg($red, false);
+}
+
+.stvi-btn-error-outline {
+	@extend .stvi-btn;
+  	@include button-bg($red, true);
+}

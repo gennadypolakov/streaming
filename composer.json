@@ -1,0 +1,14 @@
+{
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "google/apiclient": "^2.0",
+        "evenement/evenement": "^2.0",
+        "bping/ffmpeg-push": "*",
+        "nicklaw5/twitch-api-php": "^2.1",
+        "facebook/graph-sdk": "^5.7",
+        "hashids/hashids": "2.0.4",
+        "ext-json": "*",
+        "ext-mysqli": "*"
+    }
+}
